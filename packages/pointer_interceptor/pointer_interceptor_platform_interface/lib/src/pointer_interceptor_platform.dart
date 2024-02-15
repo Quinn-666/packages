@@ -37,6 +37,7 @@ abstract class PointerInterceptorPlatform extends PlatformInterface {
   /// implementation of a pointer interceptor widget.
   Widget buildWidget({
     required Widget child,
+    Alignment childAlignment = Alignment.center,
     bool debug = false,
     Key? key,
   }) {

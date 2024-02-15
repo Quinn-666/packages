@@ -11,6 +11,7 @@ class DefaultPointerInterceptor extends PointerInterceptorPlatform {
   @override
   Widget buildWidget({
     required Widget child,
+    Alignment childAlignment = Alignment.center,
     bool debug = false,
     Key? key,
   }) {

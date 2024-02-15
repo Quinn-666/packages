@@ -27,6 +27,7 @@ class PointerInterceptorWeb extends PointerInterceptorPlatform {
   @override
   Widget buildWidget({
     required Widget child,
+    Alignment childAlignment = Alignment.center,
     bool debug = false,
     bool intercepting = true,
     Key? key,
@@ -35,7 +36,7 @@ class PointerInterceptorWeb extends PointerInterceptorPlatform {
       return child;
     }
     return Stack(
-      alignment: Alignment.center,
+      alignment: childAlignment,
       children: <Widget>[
         Positioned.fill(
           child: HtmlElementView.fromTagName(

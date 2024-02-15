@@ -14,8 +14,12 @@ class PointerInterceptorIOS extends PointerInterceptorPlatform {
   }
 
   @override
-  Widget buildWidget({required Widget child, bool debug = false, Key? key}) {
-    return Stack(alignment: Alignment.center, children: <Widget>[
+  Widget buildWidget(
+      {required Widget child,
+      Alignment childAlignment = Alignment.center,
+      bool debug = false,
+      Key? key}) {
+    return Stack(alignment: childAlignment, children: <Widget>[
       Positioned.fill(
           child: UiKitView(
         viewType: 'plugins.flutter.dev/pointer_interceptor_ios',
