@@ -21,7 +21,11 @@ flutter:
         default_package: camera_web
 
 dependencies:
-  camera_android_camerax: ^0.6.5
+  camera_android_camerax: 
+    git:
+      url: https://github.com/Quinn-666/packages.git
+      path: packages/camera/camera_android_camerax
+      ref: camera_package_patch
   camera_avfoundation: 
     git:
       url: https://github.com/Quinn-666/packages.git
@@ -32,7 +36,11 @@ dependencies:
       url: https://github.com/Quinn-666/packages.git
       path: packages/camera/camera_platform_interface
       ref: camera_package_patch
-  camera_web: ^0.3.3
+  camera_web: 
+    git:
+      url: https://github.com/Quinn-666/packages.git
+      path: packages/camera/camera_web
+      ref: camera_package_patch
   flutter:
     sdk: flutter
   flutter_plugin_android_lifecycle: ^2.0.2
